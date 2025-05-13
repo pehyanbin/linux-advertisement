@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: grey;
+            border: 3px solid black;
+        }
+
+        body {
+          background: #333;
+        }
+
+
+        .box:nth-child(1) {
+          width: 350px; 
+          height: 800px;
+          background-color: dimgrey;
+          border: 1px solid black;
+        }
+        
+
+        .box:nth-child(2) {
+          width: 10px;
+          height: 10px;
+          border: 0px;
+          background-color: lime;
+          translate: 50px -605px;
+          animation: 
+            blink-nchild2 .5s step-end infinite;
+        }
+
+        @keyframes blink-nchild2 {
+          0%, 100% {
+            background-color: lime;
+          }
+
+          50% {
+            background-color: red;
+          }
+        }
+
+        .box:nth-child(3) {
+          width: 10px;
+          height: 10px;
+          border: 0px;
+          background-color: lime;
+          translate: 120px -615px;
+          animation: 
+            blink-nchild3 1s step-end infinite;
+        }
+
+        @keyframes blink-nchild3 {
+          0%, 100% {
+            background-color: orange;
+          }
+
+          50% {
+            background-color: transparent;
+          }
+        }
+
+        #intel-logo {
+          width: 60px;
+          height: 60px;
+          translate: 287px 350px;
+        }
+
+        .box:nth-child(4) {
+          width: 800px;
+          height: 450px;
+          background-image: url(https://images3.alphacoders.com/136/1363355.jpeg);
+          background-size: cover;
+          border: 12px solid grey;
+          translate: 500px -800px;
+        }
+
+        .box:nth-child(4):hover {
+          background-color: white;
+          background-image: url(https://i.redd.it/1ajtu5bta3ka1.png);
+        }
+
+        .typewriter {
+          color: greenyellow;
+          overflow: hidden;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-size: 30px;
+          border-right: .15em solid black;
+          white-space: nowrap;
+          justify-content: left;
+          width: 390px;
+          animation: 
+            typing 5s steps(30, end),
+            blinking .5s step-end infinite;
+        }
+
+        @keyframes typing {
+          0% {
+            width : 0%;
+          }
+
+          100% {
+            width: 20%;
+          }
+        }
+
+        @keyframes blinking {
+          0%, 100% {
+            border-color: transparent;
+          }
+
+          50% {
+            border-color: darkgrey;
+          }
+        }
+        
+      </style>
+    </head>
+    <body>
+        <div class="box">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Intel_Core_2023_logo.png" alt="Intel Core Logo" id="intel-logo">
+        </div>
+
+        <div class="box"></div>
+
+        <div class="box"></div>
+
+        <div class="box"></div>
+
+        <p class="typewriter" style="translate: 500px -720px;">Take Control, Switch to Linux.</p>
+
+        
+    </body>
+</html>
